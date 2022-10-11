@@ -1,0 +1,1363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6D7A494-722E-4763-959B-C2D6B6A42B01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GunRev</RootNamespace>
+    <AssemblyName>GunRev</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Characters\Discontinued\CharacterSetup.cs" />
+    <Compile Include="Enemies\Omegear\Omegear.cs" />
+    <Compile Include="Enemies\Omegear\OmegearController.cs" />
+    <Compile Include="Enemies\Omegear\OmegearIntroController.cs" />
+    <Compile Include="Enemies\Omegear\Servont.cs" />
+    <Compile Include="Enemies\RadioGuy.cs" />
+    <Compile Include="Items + Guns\Guns\ACERifle.cs" />
+    <Compile Include="Items + Guns\Guns\AutoGun.cs" />
+    <Compile Include="Items + Guns\Guns\BinaryBoxOn.cs" />
+    <Compile Include="Items + Guns\Guns\Blunderblast.cs" />
+    <Compile Include="Items + Guns\Guns\BOLTDuo.cs" />
+    <Compile Include="Items + Guns\Guns\Chair.cs" />
+    <Compile Include="Items + Guns\Guns\DiscouragementBeam.cs" />
+    <Compile Include="Items + Guns\Guns\Gunbatus.cs" />
+    <Compile Include="Items + Guns\Guns\Gungeon.cs" />
+    <Compile Include="Items + Guns\Guns\KrissKard.cs" />
+    <Compile Include="Items + Guns\Guns\LaserShotgun.cs" />
+    <Compile Include="Items + Guns\Guns\MiningLaser.cs" />
+    <Compile Include="Items + Guns\Guns\Observatory.cs" />
+    <Compile Include="Items + Guns\Guns\Piston.cs" />
+    <Compile Include="Items + Guns\Guns\Plasmatic.cs" />
+    <Compile Include="Items + Guns\Guns\Shockgun.cs" />
+    <Compile Include="Items + Guns\Guns\Trigunometry.cs" />
+    <Compile Include="Items + Guns\Items\BulletRedirectionConstruct.cs" />
+    <Compile Include="Items + Guns\Items\Button.cs" />
+    <Compile Include="Items + Guns\Items\CashInSelloMatic.cs" />
+    <Compile Include="Items + Guns\Items\ConstructionController.cs" />
+    <Compile Include="Items + Guns\Items\CryptoCurrency.cs" />
+    <Compile Include="Items + Guns\Items\Dematerialiser.cs" />
+    <Compile Include="Items + Guns\Items\DisasterRecipe.cs" />
+    <Compile Include="Items + Guns\Items\Drillets.cs" />
+    <Compile Include="Items + Guns\Items\FaultyCapacitor.cs" />
+    <Compile Include="Items + Guns\Items\GildedInfusion.cs" />
+    <Compile Include="Items + Guns\Items\InertiaBullets.cs" />
+    <Compile Include="Items + Guns\Items\MoonShots.cs" />
+    <Compile Include="Items + Guns\Items\NeutronStarBullets.cs" />
+    <Compile Include="Items + Guns\Items\NonFungiBullets.cs" />
+    <Compile Include="Items + Guns\Items\Robullets.cs" />
+    <Compile Include="Items + Guns\Items\ScienceBook.cs" />
+    <Compile Include="Items + Guns\Items\SilverCursor.cs" />
+    <Compile Include="Items + Guns\Items\SlimePendant.cs" />
+    <Compile Include="Items + Guns\Items\StackOfDirt.cs" />
+    <Compile Include="Items + Guns\Items\TNT.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Enemies\BeamTurret.cs" />
+    <Compile Include="Enemies\HoloBullet.cs" />
+    <Compile Include="Items + Guns\Guns\Atomic.cs" />
+    <Compile Include="Items + Guns\Guns\BoltBlaster.cs" />
+    <Compile Include="Items + Guns\Guns\Catalyst.cs" />
+    <Compile Include="Items + Guns\Guns\Guntry.cs" />
+    <Compile Include="Items + Guns\Guns\Keyboard.cs" />
+    <Compile Include="Items + Guns\Guns\MegaCannon.cs" />
+    <Compile Include="Items + Guns\Guns\SingleUseGun.cs" />
+    <Compile Include="Items + Guns\Guns\Vintage.cs" />
+    <Compile Include="Items + Guns\Guns\WhileGunShoot.cs" />
+    <Compile Include="Items + Guns\Items\BarrelBullets.cs" />
+    <Compile Include="Items + Guns\Items\FamiliarPhone.cs" />
+    <Compile Include="Items + Guns\Items\Graph.cs" />
+    <Compile Include="Items + Guns\Items\HoloPlush.cs" />
+    <Compile Include="Items + Guns\Items\MagnesiumGuonStone.cs" />
+    <Compile Include="Items + Guns\Items\OilJar.cs" />
+    <Compile Include="Items + Guns\Items\RadCan.cs" />
+    <Compile Include="Items + Guns\Items\RefreshKey.cs" />
+    <Compile Include="Items + Guns\Items\TableTechPause.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="ToolBox\AIBeamShooter2.cs" />
+    <Compile Include="ToolBox\APIs\BreakableAPI.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\AssetBundleBuilder.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\AssetBundleTools.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\BinaryWriterExtensions.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\CommonString.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\CRC.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorAssetBundle.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorBuildTarget.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorClassIDType.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorComponent.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorExtension.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorGameObject.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorNamedObject.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorObject.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorPPtr.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorTextAsset.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EditorTransform.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\EndianBinaryWriter.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\Examples\ExampleModule.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\Examples\UrBadAtTheGameComponent.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\ICoder.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\IMatchFinder.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4Codec.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4CodecPartial.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4\ILZ4Service.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4\LZ4Codec.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4\LZ4Codec.Safe.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4\LZ4Codec.Safe32.Dirty.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4\LZ4Codec.Safe32HC.Dirty.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4\LZ4Codec.Safe64.Dirty.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LZ4\LZ4Codec.Safe64HC.Dirty.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LzBinTree.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LzInWindow.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LzmaBase.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LzmaDecoder.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LzmaEncoder.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\LzOutWindow.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\PPtr.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\PrefabBuilder.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\RangeCoder.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\RangeCoderBit.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\RangeCoderBitTree.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\Safe32LZ4Service.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\Safe64LZ4Service.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\SerializedType.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\SerializedTypeStorage.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\SevenZipHelper.cs" />
+    <Compile Include="ToolBox\APIs\PrefabApi\TypeTreeNode.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\AdvancedGameStats.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\AdvancedGameStatsManager.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\AdvancedMidGameSaveData.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\BreachShopTool.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\CustomDungeonPrerequisite.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\CustomHuntQuest.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\CustomHuntQuests.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\Enums\Comparers\CustomDungeonFlagsComparer.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\Enums\Comparers\CustomTrackedMaximumsComparer.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\Enums\Comparers\CustomTrackedStatsComparer.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\Enums\CustomCharacterSpecificGungeonFlags.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\Enums\CustomDungeonFlags.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\Enums\CustomTrackedMaximums.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\Enums\CustomTrackedStats.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\JammedEnemyState.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\SaveAPIManager.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\SaveTools.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\SpecialAIActor.cs" />
+    <Compile Include="ToolBox\APIs\SaveAPI\SpecialPickupObject.cs" />
+    <Compile Include="ToolBox\AdvancedDualWieldProcessor.cs" />
+    <Compile Include="ToolBox\AdvancedPlayerOrbitalItem.cs" />
+    <Compile Include="ToolBox\AdvancedStrings1.cs" />
+    <Compile Include="ToolBox\AdvancedStrings2.cs" />
+    <Compile Include="ToolBox\APIs\EnemyAPI\BossBuilder.cs" />
+    <Compile Include="ToolBox\APIs\EnemyAPI\EnemyBuilder.cs" />
+    <Compile Include="ToolBox\APIs\EnemyAPI\EnemyTools.cs" />
+    <Compile Include="ToolBox\APIs\EnemyAPI\Hooks.cs" />
+    <Compile Include="ToolBox\APIs\EnemyAPI\OverrideBehavior.cs" />
+    <Compile Include="ToolBox\AudioResourceLoader.cs" />
+    <Compile Include="ToolBox\BeamToolbox.cs" />
+    <Compile Include="ToolBox\CompanionBehaviours.cs" />
+    <Compile Include="ToolBox\CustomBeholsterBeamBehaviour.cs" />
+    <Compile Include="ToolBox\CustomSwitchData.cs" />
+    <Compile Include="ToolBox\EmmisiveBeams.cs" />
+    <Compile Include="ToolBox\EnemyReplace.cs" />
+    <Compile Include="ToolBox\ExtendedColours.cs" />
+    <Compile Include="ToolBox\Lightning.cs" />
+    <Compile Include="ToolBox\MathAndLogic.cs" />
+    <Compile Include="ToolBox\ProjSpawnHelper.cs" />
+    <Compile Include="ToolBox\RandomNameAndSpriteOfItem.cs" />
+    <Compile Include="ToolBox\RandomProjectileStats.cs" />
+    <Compile Include="ToolBox\ReflectionHelpers.cs" />
+    <Compile Include="ToolBox\RemoteBulletsProjectileBehaviour.cs" />
+    <Compile Include="ToolBox\resourceLoaderSoundbanks.cs" />
+    <Compile Include="ToolBox\SimpleToolbox.cs" />
+    <Compile Include="ToolBox\SlowingBulletsEffect.cs" />
+    <Compile Include="ToolBox\SoundManager.cs" />
+    <Compile Include="ToolBox\StaticStatusEffects.cs" />
+    <Compile Include="ToolBox\StopEventType.cs" />
+    <Compile Include="ToolBox\SwitchedEvent.cs" />
+    <Compile Include="ToolBox\SynergyForms.cs" />
+    <Compile Include="ToolBox\ToolsOther.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\beamturretammonomicon.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_die_001.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_die_002.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_die_003.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_die_004.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_die_005.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_idle_001.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_tell_001.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_tell_002.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_tell_003.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_tell_004.png" />
+    <EmbeddedResource Include="Resources\beamturret\beamturret_tell_005.png" />
+    <EmbeddedResource Include="Resources\familiarphone.png" />
+    <EmbeddedResource Include="Resources\graph.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_003.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_004.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_005.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_006.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_007.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_008.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_009.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_010.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_011.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_die_012.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_hand.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_idle_left_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_idle_left_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_idle_right_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_idle_right_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_003.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_004.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_005.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_006.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_back_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_back_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_back_003.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_back_004.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_back_005.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_left_back_006.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_003.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_004.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_005.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_006.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_back_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_back_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_back_003.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_back_004.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_back_005.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_run_right_back_006.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_spawn_001.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_spawn_002.png" />
+    <EmbeddedResource Include="Resources\holobullet\holobullet_spawn_003.png" />
+    <EmbeddedResource Include="Resources\holokinammonomicon.png" />
+    <EmbeddedResource Include="Resources\holoplush.png" />
+    <EmbeddedResource Include="Resources\magnesiumguonorbital.png" />
+    <EmbeddedResource Include="Resources\magnesiumguonstone.png" />
+    <EmbeddedResource Include="Resources\oiljar.png" />
+    <EmbeddedResource Include="Resources\refreshkey.png" />
+    <EmbeddedResource Include="Resources\tabletechpause.png" />
+    <EmbeddedResource Include="Resources\unstableguonorbital.png" />
+    <EmbeddedResource Include="Resources\whilegunshoot_impact_001.png" />
+    <EmbeddedResource Include="Resources\whilegunshoot_middle_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_charge_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_charge_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_charge_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_011.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_charge_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_charge_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_charge_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\portalturret_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\portalturret_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\portalturret_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_idle_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_idle_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_011.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_idle_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_idle_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_011.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_idle_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_idle_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_011.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_idle_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_idle_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_011.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_008.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_009.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_010.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_011.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_006.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_007.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_003.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_004.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_005.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_idle_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\whilegunshoot_fire_001.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\whilegunshoot_fire_002.json" />
+    <EmbeddedResource Include="sprites\WeaponCollection\whilegunshoot_idle_001.json" />
+    <EmbeddedResource Include="Resources\GundustrialRevolution.bnk" />
+    <None Include="ToolBox\APIs\PrefabApi\prefab api.zip" />
+    <None Include="ToolBox\packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\silvercursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\slimebuddy\slimependant.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_idle_001.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_idle_002.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_idle_003.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_idle_004.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_back_001.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_back_002.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_back_003.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_back_004.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_left_002.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_left_003.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_left_004.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_right_001.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_right_002.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_right_003.png" />
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_right_004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\slimebuddy\slime_run_left_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\button_idle_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Clips\chair_uiclip.png" />
+    <EmbeddedResource Include="Resources\Clips\chair_uiclip_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Clips\binaryclip.png" />
+    <EmbeddedResource Include="Resources\Clips\binaryclipempty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\crypturret\crypturret_idle_001.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_idle_002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_001.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_002.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_003.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_004.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_005.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_006.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_007.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypturret_intro_008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\gildedheart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Clips\redstone_clip.png" />
+    <EmbeddedResource Include="Resources\Clips\redstone_clip_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\blocks\brick_destroy_001.png" />
+    <EmbeddedResource Include="Resources\blocks\brick_destroy_002.png" />
+    <EmbeddedResource Include="Resources\blocks\brick_destroy_003.png" />
+    <EmbeddedResource Include="Resources\blocks\brick_destroy_004.png" />
+    <EmbeddedResource Include="Resources\blocks\brick_destroy_005.png" />
+    <EmbeddedResource Include="Resources\blocks\brick_idle_001.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_001.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_002.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_003.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_004.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_005.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_006.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_007.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_destroy_008.png" />
+    <EmbeddedResource Include="Resources\blocks\cobble_idle_001.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_001.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_002.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_003.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_004.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_005.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_006.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_007.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_destroy_008.png" />
+    <EmbeddedResource Include="Resources\blocks\dirt_idle_001.png" />
+    <EmbeddedResource Include="Resources\blocks\stonebrick_destroy_001.png" />
+    <EmbeddedResource Include="Resources\blocks\stonebrick_destroy_002.png" />
+    <EmbeddedResource Include="Resources\blocks\stonebrick_destroy_003.png" />
+    <EmbeddedResource Include="Resources\blocks\stonebrick_destroy_004.png" />
+    <EmbeddedResource Include="Resources\blocks\stonebrick_idle_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\tnt\tnt.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_idle_001.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_001.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_002.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_003.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_004.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_005.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_006.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_007.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_008.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_009.png" />
+    <EmbeddedResource Include="Resources\tnt\tnt_prime_010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\blocks\dirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\lasershotgun_impact_001.png" />
+    <EmbeddedResource Include="Resources\lasershotgun_middle_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\discouragementbeam_impact_001.png" />
+    <EmbeddedResource Include="Resources\discouragementbeam_mid_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\drillet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_001.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_002.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_003.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_004.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_005.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_006.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_007.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_008.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_009.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_010.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_011.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\servont\servont_idle_001.png" />
+    <EmbeddedResource Include="Resources\servont\servont_idle_002.png" />
+    <EmbeddedResource Include="Resources\servont\servont_idle_003.png" />
+    <EmbeddedResource Include="Resources\servont\servont_idle_004.png" />
+    <EmbeddedResource Include="Resources\servont\servont_idle_005.png" />
+    <EmbeddedResource Include="Resources\servont\servont_idle_006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\servont\servont_die_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\inertia_bullets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\radioguy\radio_idle_front_left_001.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_idle_front_left_002.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_idle_front_right_001.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_idle_front_right_002.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_left_001.gif" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_left_001.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_left_002.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_left_003.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_left_004.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_left_005.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_left_006.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_right_001.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_right_002.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_right_003.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_right_004.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_right_005.png" />
+    <EmbeddedResource Include="Resources\radioguy\radio_run_right_006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sciencetome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\disasterrecipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_001.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_002.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_003.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_004.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_005.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_006.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_007.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_008.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_009.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_010.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_011.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_012.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_013.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_014.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_015.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_016.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_017.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_018.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_019.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_020.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_021.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_022.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_023.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_024.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_025.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_026.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_027.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_028.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_029.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_030.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_031.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_032.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_033.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_034.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_035.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_036.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_037.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_038.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_039.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_040.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_041.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_042.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_043.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_044.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_045.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_046.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_047.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_048.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_049.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_050.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_051.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_052.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_053.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_054.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_055.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_056.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_057.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_058.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_059.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_060.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_061.png" />
+    <EmbeddedResource Include="Resources\omegear\omegear_intro_062.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\omegear\omegearicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\omegear\omegear_bosscard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\faultycapacitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Characters\Discontinued\coop_page_death.png" />
+    <EmbeddedResource Include="Characters\Discontinued\icon.png" />
+    <EmbeddedResource Include="Characters\Discontinued\facecard.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_hold\robot_select_off_hold_001.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_hold\robot_select_off_hold_002.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_in\robot_select_off_001.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_in\robot_select_off_002.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_in\robot_select_off_003.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_in\robot_select_off_004.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_001.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_002.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_003.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_004.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_005.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_006.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_007.png" />
+    <EmbeddedResource Include="Characters\Discontinued\newspritesetup\breach_idles\sleep_out\robot_select_off_out_008.png" />
+    <EmbeddedResource Include="Resources\bulletredirector.png" />
+    <EmbeddedResource Include="Resources\precisionguon.png" />
+    <EmbeddedResource Include="Resources\redirectionguon.png" />
+    <EmbeddedResource Include="Resources\neutron_star_bullets.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_002.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_003.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_004.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_005.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_006.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_007.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_008.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_009.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_010.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_011.png" />
+    <EmbeddedResource Include="Resources\nonfungibullets\non-fungibullets_012.png" />
+    <EmbeddedResource Include="Resources\instacash.png" />
+    <EmbeddedResource Include="Resources\sell_note.png" />
+    <EmbeddedResource Include="Resources\mininglaser_orange_end_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_orange_mid_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_orange_start_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_red_end_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_red_mid_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_red_start_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_yellow_end_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_yellow_mid_001.png" />
+    <EmbeddedResource Include="Resources\mininglaser_yellow_start_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\ace_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\blunderblast_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\bolt_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\catalyst_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\chair_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\discouragementbeam_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\gunbatus_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\gungeon_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\keyboard_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\lasershotgun_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\megatshirtcannon_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\mininglaser_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\observatory_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\piston_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\plasmatic_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\reactorcore_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\rocketgun1_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\singleusegun_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\trigunometry_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\vintage_idle_001.png" />
+    <EmbeddedResource Include="sprites\Ammonomicon Encounter Icon Collection\whilegunshoot_idle_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\binarybox_projectile_on.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\blunderblast_projectile_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\bolt_projectile_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\bolt_projectile_002.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\catalyst_projectile_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\chair_projectile.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\discontinued_ghost_proj.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\gunbatusprojectile_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\gungeon_projectile_blobulon.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\gungeon_projectile_bulletkin.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\gungeon_projectile_hollowpoint.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\gungeon_projectile_pinhead.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\gungeon_projectile_shotgunkin.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\gungeon_projectile_spectre.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\keyboard_projectile_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\keyboard_projectile_002.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\keyboard_projectile_003.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\keyboard_projectile_004.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\plasmathrower_projectile_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\reactorcore_projectile.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\rocketgun_projectile_001.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\rocketgun_projectile_002.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\rocketgun_projectile_003.png" />
+    <EmbeddedResource Include="sprites\ProjectileCollection\trigunometry_projectile_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\ace_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\binaryon_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_charge_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_charge_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_charge_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\blunderblast_reload_011.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\boltduo_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\bolt_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\catalyst_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\chair_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\discouragementbeam_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gunbatus_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\gungeon_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\keyboard_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\lasershotgun_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_charge_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_charge_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_charge_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\megatshirtcannon_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\mininglaser_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_fire_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\observatory_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_fire_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\piston_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\plasmatic_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\portalturret_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\portalturret_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\portalturret_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\reactorcore_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_idle_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_idle_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun1_reload_011.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_idle_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_idle_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun2_reload_011.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_idle_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_idle_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun3_reload_011.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_idle_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_idle_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun4_reload_011.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_008.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_009.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_010.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\rocketgun5_reload_011.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\shockgun_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\singleusegun_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\tinymagnum_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_006.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\trigunometry_reload_007.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_003.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_004.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_fire_005.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\vintage_idle_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\whilegunshoot_fire_001.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\whilegunshoot_fire_002.png" />
+    <EmbeddedResource Include="sprites\WeaponCollection\whilegunshoot_idle_001.png" />
+    <EmbeddedResource Include="Resources\radcan.png" />
+    <EmbeddedResource Include="Resources\robullets.png" />
+    <EmbeddedResource Include="Resources\crypturret\crypto.png" />
+    <EmbeddedResource Include="Resources\dematerialiser.png" />
+    <EmbeddedResource Include="Resources\barrelbullets.png" />
+    <EmbeddedResource Include="Resources\moonshots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Alexandria, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\Alexandria-Alexandria-0.2.0\plugins\Alexandria.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="ModTheGungeonAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\BepInEx\plugins\MtGAPI\ModTheGungeonAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\BepInEx\core\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour, Version=18.9.0.42435, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils, Version=18.9.0.42433, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\BepInEx\core\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMaker, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\EtG_Data\Managed\PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\EtG_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\EtG_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\EtG_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Enter the Gungeon\EtG_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_001.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_002.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_003.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_004.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_005.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_006.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_007.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_008.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_009.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_010.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_011.png" />
+    <EmbeddedResource Include="Resources\omegear\gearboss_idle_right_012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\omegear\omegear_intro_063.png" />
+    <Content Include="Resources\omegear\omegear_intro_064.png" />
+    <Content Include="Resources\omegear\omegear_intro_065.png" />
+    <Content Include="Resources\omegear\omegear_intro_066.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
